@@ -1,0 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { ProductsProvider } from './context/Context';
+import App from './App';
+import { HelmetProvider } from "react-helmet-async";
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+
+
+<HelmetProvider>
+        <ProductsProvider>
+              <App />   
+        </ProductsProvider>
+</HelmetProvider>
+    );

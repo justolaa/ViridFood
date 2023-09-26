@@ -1,0 +1,137 @@
+import React from 'react'
+import { products } from '../data/constants';
+import styled from 'styled-components';
+import { Helmet } from 'react-helmet-async';
+
+const Products = () => {
+   return (<Helmet>
+        <title>ViridFood Products</title>
+        <meta name='description' content='Purchase Affordable Chicken, Smoked Fish, Meatpie.'/>
+        <link rel="canonical" href="/products" />
+<Wrapper>
+            <div className="container">
+                    <div className="title">
+                        <h1>our Products</h1>
+                            <div className='underline'></div>
+                            <p>Our Products Are The Embodiment Of Culinary Artistry, Combining Fresh Ingredients
+                                To Create Delicious And Visually Stunning Dishes.
+                            </p>
+                                <div className="Images" >
+                                    {products.map((products)=>{
+                                        const {id, title, url, width, height} = products;
+                                        return(
+                                            <div key={id}>
+                                                <img src={url} width={width} height={height} alt={title} />
+                                                 <div className="description">
+                                                        <p>{title}</p>  
+                                                 </div>
+                                        </div>
+                                        )
+                                    })}
+                                </div>
+                </div>
+                <div className="btn"><a href="https://wa.me/08183554935">Purchase Now</a></div>  
+            </div>
+                 
+            </Wrapper>
+            </Helmet>
+  )
+}
+const Wrapper = styled('Services')`
+    h1{
+        font-size: 2.2rem;
+        font-family: Cormorant Garamond;
+    }
+
+    .underline{
+        margin-left: 80px;
+    }
+
+   .title{
+       margin-top: 50px;
+    }
+
+    .title > p{
+        line-height: 36px;
+        margin-top: 10px;
+        font-size: 1.3rem;
+        font-family: Proza Libre;
+    }
+     
+     
+    .Images{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+          img{
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            border-radius:10px;
+            }
+    }
+
+    .description{
+        transform: translateY(-64px);
+         width: 300px;
+         height: 61px;
+         background: rgba(0, 0, 0, 0.20);
+         backdrop-filter: blur(2px);
+         border-radius:10px;
+    }
+
+    .description > p{
+       line-height: 61px;
+       text-align: center;
+       color:var(--Neutral, #F5F5DC);
+       font-family: Cormorant Garamond;
+       font-size:23px;
+
+    }
+
+    .btn{
+        width: fit-content;
+    }
+    .btn a{
+        color:hsl(22, 28%, 21%);
+    }
+     @media (max-width: 992px) {
+
+      .container{
+        text-align: center;
+      }
+      .Images{ 
+        display: flex;
+        justify-content: center;
+        
+      }
+      .underline{
+        margin-left: 190px;
+        margin-top: 10px;
+      }
+    }
+    @media (min-width: 992px) {
+
+      .container{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 30px;
+      }
+      
+      .underline{
+        margin-left: 60px;
+        margin-top: 10px;
+      }
+      .btn{
+        width: fit-content;
+        position: absolute;
+        left: 45%;
+    }
+}
+
+    `
+
+export default Products

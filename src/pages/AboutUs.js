@@ -5,11 +5,13 @@ import { Helmet } from 'react-helmet-async';
 
 const AboutUs = () => {
   return (
+    <>
     <Helmet>
         <title>About ViridFood Catering Services</title>
         <meta name='description' content='We Are A Team That Consists Of Expert Chefs, Experienced Servers, And Dedicated 
                             Staffs Who Work Tirelessly To Ensure That Every Customer Has An Unforgettable Experience'/>
         <link rel="canonical" href="/aboutus" />
+        </Helmet>
     <Wrapper>
             <div className="container">
                     <div className="title">
@@ -34,8 +36,8 @@ const AboutUs = () => {
             </div>
             <ContactUs/>
     </Wrapper>  
-    </Helmet>
-  )
+    
+  </>)
 }
 const Wrapper = styled('AboutUs')`
     .container{

@@ -1,7 +1,7 @@
 {
-    "rewrites":[
-        {"source": "/services", "destination": "/"},
-        {"source": "/products", "destination": "/"},
-        {"source": "/aboutus", "destination": "/"}
+    "routes":[
+        {"src": "/services", "destination": "/"},
+        {"src": "/products", "destination": "/"},
+        {"src": "/aboutus", "destination": "/"}
     ]
 }

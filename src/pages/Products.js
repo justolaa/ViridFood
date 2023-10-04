@@ -4,10 +4,12 @@ import styled from 'styled-components';
 import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
-   return (<Helmet>
+   return (<>
+   <Helmet>
         <title>ViridFood Products</title>
         <meta name='description' content='Purchase Affordable Chicken, Smoked Fish, Meatpie.'/>
         <link rel="canonical" href="/products" />
+        </Helmet>
 <Wrapper>
             <div className="container">
                     <div className="title">
@@ -34,7 +36,7 @@ const Products = () => {
             </div>
                  
             </Wrapper>
-            </Helmet>
+           </> 
   )
 }
 const Wrapper = styled('Services')`
@@ -43,9 +45,7 @@ const Wrapper = styled('Services')`
         font-family: Cormorant Garamond;
     }
 
-    .underline{
-        margin-left: 80px;
-    }
+   
 
    .title{
        margin-top: 50px;
@@ -105,12 +105,7 @@ const Wrapper = styled('Services')`
       }
       .Images{ 
         display: flex;
-        justify-content: center;
-        
-      }
-      .underline{
-        margin-left: 190px;
-        margin-top: 10px;
+        justify-content: space-evenly;
       }
     }
     @media (min-width: 992px) {

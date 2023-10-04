@@ -33,7 +33,7 @@ margin-left: 0px;
   }
 
   .reviews{
-    margin-left: -5px;
+    margin-left: 0px;
   }
 `
 export default Stars

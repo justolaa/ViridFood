@@ -91,6 +91,10 @@ const Wrapper = styled('Footer')`
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0px;
+  text-align: center;
+  }
+   p{
+    text-align: center;
   }
 
   a{
@@ -107,11 +111,18 @@ const Wrapper = styled('Footer')`
   .container{
     margin-top: 50px;
   }
+
+  .Links{
+    margin: auto;
+    gap: 0.5rem;
+  }
+ 
     .footer-links h1{
       font-size: 15px;
     }
     .footer-links p{
       font-size: 15px;
+      line-height: 30px;
     }
 }
 `

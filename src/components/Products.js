@@ -7,7 +7,9 @@ const Products = () => {
   return (
     <Wrapper>
         <div className="container">
+            
     <div className="title">
+        
                         <h1>our products</h1>
                             <div className='underline'></div>
                                 <div className="Images" >
@@ -23,8 +25,9 @@ const Products = () => {
                                         )
                                     })}
                                 </div>
-                        <div className="learn-more"><Link to='/products'><p>Learn More</p><div className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></div></Link></div> 
                     </div>
+                    <div className="learn-more"><Link to='/services'><span>Learn More</span><span className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></span> </Link></div> 
+                     <hr />
                 </div>
             </Wrapper>
   )
@@ -81,14 +84,13 @@ const Wrapper = styled('Products')`
 
     }
 
-    .learn-more{
-        position: absolute;
-        width: 130px;
+   .learn-more{
+        width: fit-content;
+        text-align: center;
         height: 44px;
         border-radius: 10px;
         padding: 10px;
-        right: 0px;
-        margin-right: 93px;
+        margin: auto;
         text-transform: uppercase;
         font-weight: 500;
         transition: var(--transition);
@@ -101,17 +103,14 @@ const Wrapper = styled('Products')`
         background: #FFCC70;
     }
     
-    .learn-more p{
+     .learn-more span{
         color: #000;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
     }
      .arrow img{
-        position: absolute;
-        right: 0px;
         margin-right: -50px;
-        transform: translateY(-35px);
     }
   @media (max-width: 992px) {
 
@@ -122,11 +121,10 @@ const Wrapper = styled('Products')`
 
       .Images{ 
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
       }
       .underline{
-        margin-left: 190px;
-        margin-top: 10px;
+         margin: auto;
       }
 }
   @media (min-width: 992px) {
@@ -134,7 +132,7 @@ const Wrapper = styled('Products')`
       .container{
        margin-left: 50px;
       }
-      .underline{
+       .underline{
         margin-left: 60px;
         margin-top: 10px;
       }

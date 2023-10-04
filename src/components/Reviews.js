@@ -35,7 +35,6 @@ const Wrapper = styled('Reviews')`
 .container{
     margin: 50px;
         }
-
         h1{
         font-size: 2.2rem;
         font-family: Cormorant Garamond;
@@ -55,7 +54,6 @@ const Wrapper = styled('Reviews')`
         grid-template-rows: repeat(2,auto) ;
         grid-template-columns: repeat(2, auto);
         gap: 10px;
-        margin-left: 30px;
     }
 
 .customer-reviews{
@@ -81,10 +79,8 @@ const Wrapper = styled('Reviews')`
         margin-top: 35px;
       }
 
-      .underline{
-        margin-left: 140px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+      .reviews{
+        margin-left: 0px;
       }
 }
   @media (min-width: 992px) {

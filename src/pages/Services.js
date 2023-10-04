@@ -4,11 +4,14 @@ import styled from 'styled-components';
 import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
-  return ( <Helmet>
+  return ( 
+    <>
+    <Helmet>
         <title>ViridFood Catering Services</title>
         <meta name='description' content='Book Our Exquisite Catering Services For Your Events. We serve mouthwatering African Dishes.'/>
         <link rel="canonical" href="/services" />
-<Wrapper>
+    </Helmet>
+    <Wrapper>
             <div className="container">
                     <div className="title">
                         <h1>our services</h1>
@@ -31,10 +34,9 @@ const Services = () => {
                 </div>
                 <div className="btn"><a href="https://wa.me/08183554935">Contact Us Now</a></div>
             </div>
-                 
-                 
-            </Wrapper>
-            </Helmet>
+            
+             </Wrapper>
+            </>
   )
 }
 const Wrapper = styled('Services')`
@@ -71,7 +73,7 @@ const Wrapper = styled('Services')`
             border-radius:10px;
             }
     }
-    }
+    
 
     .description{
         transform: translateY(-64px);
@@ -105,12 +107,9 @@ const Wrapper = styled('Services')`
       }
       .Images{ 
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
       }
-      .underline{
-        margin-left: 190px;
-        margin-top: 10px;
-      }
+  
     }
       @media (min-width: 992px) {
 

@@ -3,20 +3,21 @@ import Services from './Services';
 import Products from './Products';
 import Reviews from './Reviews';
 import ContactUs from './ContactUs';
+import Notice from './Notice';
 
 const Homepage = () => {
-  return (
+  return ( 
             <div className="container">
                    <Services/>
-                        <hr />
                     <Products/>
-                        <hr />
                     <Reviews/>
+                    <Notice/>
                <ContactUs/>
             </div>
-      
+ 
   )
 }
+
 
 
 export default Homepage

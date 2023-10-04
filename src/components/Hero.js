@@ -10,10 +10,10 @@ const Hero = () => {
                 <div className="text">
                     <h1>Discover our pot of sweet surprises</h1>
                     <div className="tagline">
-                           <p>Welcome To Our Food Service Sector! We Offer An Extensive Range Of Products
+                           <h2>Welcome To Our Food Service Sector! We Offer An Extensive Range Of Products
                         And Services And Provide Regular Promotions And Discounts. Explore Our Website
                         And Discover What We Have To Offer!
-                    </p>
+                    </h2>
                     </div>
 
                 </div>
@@ -53,32 +53,31 @@ width: 100vw;
 
 .text{
     position: absolute;
-    width: 50%;
+    width: 55%;
     top:20%;
     border-radius: 24px;
     background: rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(1.5px);
     text-align: center;
     font-family: Cormorant Garamond;
-
+   
    h1{
-      width: 700px;
       color: #F5F5DC;
       text-transform: uppercase;
       font-size: 28px;
-      
    }
 }
-  .tagline > p {
-    width: 400px;
-    margin-left: 148px;
+  .tagline > h2 {
+    width: 450px;
+    margin: auto;
     flex: 1 0 0;
     color: var(--Neutral, #F5F5DC);
     text-align: center;
-    font-size: 17px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 20;
     line-height: 34px;
+    font-family: Proza Libre;
    }
 
    @media screen and (max-width: 992px) {
@@ -86,17 +85,22 @@ width: 100vw;
         width: 95%;
         right: 10px;
         text-align: center;
+        backdrop-filter: none; 
+        margin: auto;
         
       h1{
-        width: 400px;
-        font-size: 16px;
+       font-size: 17px;
         margin: auto;
       }
     }
-    .tagline > p{
-        font-size: 14px;
-        margin: 0;
+    .tagline > h2{
+        width: fit-content;
         margin: auto;
+        line-height: 28px;
+        font-size: 16px;
+        padding: 15px;
+        font-weight:normal;
+
     }
 
 `

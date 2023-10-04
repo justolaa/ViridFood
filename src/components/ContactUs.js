@@ -7,8 +7,8 @@ const ContactUs = () => {
      <div className="call-to-action">
                     <h1>Get Started with Us !</h1>
                     <div className='underline'></div>
-                    <p>Call ViridFood at <a href="tel:+2348137038442">+2348137038442</a> To Learn More !</p>
-                    <p>To Request A Quote: <a href="https://wa.me/+2348137038442">Click Here ! </a></p>
+                    <p> Call: <a href="tel:2348137038442">+2348137038442</a><span> To Learn More !</span></p>
+                    <p> To Request A Quote: <a href="https://wa.me/+2348137038442"> <span>Click Here !</span></a></p>
                     <p>Chat With Us:<a href="https://wa.me/+2348137038442"> Click Here !</a><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></p>
                 </div>
      </Wrapper>
@@ -18,7 +18,7 @@ const ContactUs = () => {
 const Wrapper = styled('ContactUs') `
 
 h1{
-    font-size: 2.2rem;
+    font-size: 2.2rem;;
         font-family: Cormorant Garamond;
 }
 
@@ -43,16 +43,18 @@ h1{
     font-family: Proza Libre;
     margin-left: 5px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 40px; 
 }
 
 
  @media (max-width: 992px) {
 .call-to-action p{
-    margin-top: 40px;
+    margin-top: 35px;
     line-height: 8px;
     font-size: 18px;
-
+}
+.underline{
+    margin-left: 0;
 }
      
 }

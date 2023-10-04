@@ -1,5 +1,5 @@
 {
-    "routes":[
+    "rewrites":[
         {"src": "/services", "destination": "/"},
         {"src": "/products", "destination": "/"},
         {"src": "/aboutus", "destination": "/"}

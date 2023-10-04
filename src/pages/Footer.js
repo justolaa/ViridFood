@@ -86,7 +86,7 @@ const Wrapper = styled('Footer')`
   flex-shrink: 1;
 
   h1{
-  font-family: Cormorant Garamond;
+  font-family: 'Cormorant Garamond';
   color: var(--Neutral, #F5F5DC);
   font-size: 20px;
   font-weight: 300;

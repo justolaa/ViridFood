@@ -37,7 +37,7 @@ const Wrapper = styled('Reviews')`
         }
         h1{
         font-size: 2.2rem;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
     }
     .title{
        margin-top: 50px;
@@ -47,7 +47,7 @@ const Wrapper = styled('Reviews')`
         line-height: 36px;
         margin-top: 10px;
         font-size: 1.3rem;
-        font-family: Proza Libre;
+        font-family: 'Proza Libre';
     }
 .reviews{
         display: grid;
@@ -65,7 +65,7 @@ const Wrapper = styled('Reviews')`
    
 
     h4{
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
         border-radius: 10px;
     }
 }

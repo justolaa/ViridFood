@@ -42,7 +42,7 @@ const Products = () => {
 const Wrapper = styled('Services')`
     h1{
         font-size: 2.2rem;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
     }
 
    
@@ -87,7 +87,7 @@ const Wrapper = styled('Services')`
        line-height: 61px;
        text-align: center;
        color:var(--Neutral, #F5F5DC);
-       font-family: Cormorant Garamond;
+       font-family: 'Cormorant Garamond';
        font-size:23px;
 
     }

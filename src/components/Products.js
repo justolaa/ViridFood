@@ -37,7 +37,7 @@ const Wrapper = styled('Products')`
 
  h1{
         font-size: 2.2rem;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
     }
 
 
@@ -63,7 +63,7 @@ const Wrapper = styled('Products')`
         line-height: 36px;
         margin-top: 10px;
         font-size: 1.3rem;
-        font-family: Proza Libre;
+        font-family: 'Proza Libre';
     }
 
     .description{

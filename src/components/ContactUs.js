@@ -19,7 +19,7 @@ const Wrapper = styled('ContactUs') `
 
 h1{
     font-size: 2.2rem;;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
 }
 
 .call-to-action{

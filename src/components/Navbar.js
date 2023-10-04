@@ -71,7 +71,7 @@ const Wrapper = styled('Navbar') `
 .text{
     flex-shrink:0;
      color: black;
-     font-family: Cormorant Garamond;
+     font-family: 'Cormorant Garamond';
      font-size: 24px;
      margin-left: 6px;
      margin-top: -69px;

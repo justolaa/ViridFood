@@ -56,7 +56,7 @@ const Wrapper = styled('Services')`
         line-height: 36px;
         margin-top: 10px;
         font-size: 1.3rem;
-        font-family: Proza Libre;
+        font-family: 'Proza Libre';
     }
      
     .Images{
@@ -88,7 +88,7 @@ const Wrapper = styled('Services')`
        line-height: 61px;
        text-align: center;
        color:var(--Neutral, #F5F5DC);
-       font-family: Cormorant Garamond;
+       font-family: 'Cormorant Garamond';
        font-size:23px;
 
     }

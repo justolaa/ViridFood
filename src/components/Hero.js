@@ -59,7 +59,7 @@ width: 100vw;
     background: rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(1.5px);
     text-align: center;
-    font-family: Cormorant Garamond;
+    font-family: 'Cormorant Garamond';
    
    h1{
       color: #F5F5DC;
@@ -77,7 +77,7 @@ width: 100vw;
     font-style: normal;
     font-weight: 20;
     line-height: 34px;
-    font-family: Proza Libre;
+    font-family: 'Proza Libre';
    }
 
    @media screen and (max-width: 992px) {

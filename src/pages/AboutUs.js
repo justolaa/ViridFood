@@ -44,7 +44,7 @@ const Wrapper = styled('AboutUs')`
 
     h1{
         font-size: 2.2rem;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
     }
 
     .title  p{
@@ -57,7 +57,7 @@ const Wrapper = styled('AboutUs')`
 
     h5{
         color: #000;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
         font-weight: 700;
         font-size: 20px;
         margin-top: 50px;

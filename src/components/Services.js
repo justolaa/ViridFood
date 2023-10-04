@@ -31,7 +31,7 @@ const Services = () => {
                                
                           
                     </div>
-                     <div className="learn-more"><Link to='/services'><span>Learn More</span><span className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></span> </Link></div> 
+                     <div className="learn-more"><Link to='/services'>Learn More<span className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></span> </Link></div> 
                      <hr />
                 </div>
                 
@@ -106,6 +106,10 @@ const Wrapper = styled('Services')`
         transition: var(--transition);
         box-shadow: 0 1px 3px rgba(161, 161, 161, 0.2);
         border-color: transparent;
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
     .learn-more:hover{
@@ -113,12 +117,6 @@ const Wrapper = styled('Services')`
         background: #FFCC70;
     }
     
-    .learn-more span{
-        color: #000;
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
      .arrow img{
         margin-right: -50px;
     }

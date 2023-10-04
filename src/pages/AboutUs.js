@@ -40,13 +40,7 @@ const AboutUs = () => {
   </>)
 }
 const Wrapper = styled('AboutUs')`
-    .container{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        margin-top: 30px;
-        margin-left: 50px;
-    }
+   
 
     h1{
         font-size: 2.2rem;
@@ -69,15 +63,27 @@ const Wrapper = styled('AboutUs')`
         margin-top: 50px;
     }
 
+ @media (min-width: 992px) {
+   .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+ }
   @media (max-width: 992px) {
 
       .container{
+        display: flex;
+        flex-direction: column;
         text-align: center;
       }
       .title .underline{
         margin-left: 190px;
         margin-top: 10px;
       }
+
 
    
     `

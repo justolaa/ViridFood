@@ -26,7 +26,9 @@ const Products = () => {
                                     })}
                                 </div>
                     </div>
-                    <div className="learn-more"><Link to='/services'><span>Learn More</span><span className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></span> </Link></div> 
+                     <div className="learn">
+                        <Link to='/services'> <span className="learn-more">Learn More</span><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/>  </Link>
+                    </div> 
                      <hr />
                 </div>
             </Wrapper>
@@ -84,18 +86,29 @@ const Wrapper = styled('Products')`
 
     }
 
-   .learn-more{
-        width: fit-content;
-        text-align: center;
-        height: 44px;
+    .learn{
+            width: fit-content;
+            text-align: center;
+            height: 44px;
+            margin: auto;
+
+            img{
+                transform: translateY(16px);
+            }
+          }
+
+    .learn-more{
         border-radius: 10px;
         padding: 10px;
-        margin: auto;
         text-transform: uppercase;
         font-weight: 500;
         transition: var(--transition);
         box-shadow: 0 1px 3px rgba(161, 161, 161, 0.2);
         border-color: transparent;
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
     .learn-more:hover{

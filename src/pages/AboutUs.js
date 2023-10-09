@@ -51,15 +51,11 @@ const Wrapper = styled('AboutUs')`
         margin-top: 14px;
     }
 
-    .underline{
-        margin-left: 50px;
-    }
 
     h5{
         color: #000;
         font-family: 'Cormorant Garamond';
         font-weight: 700;
-        font-size: 20px;
         margin-top: 50px;
     }
 
@@ -71,6 +67,9 @@ const Wrapper = styled('AboutUs')`
         margin-top: 30px;
         margin-left: 50px;
     }
+     .underline{
+        margin-left: 50px;
+    }
  }
   @media (max-width: 992px) {
 
@@ -80,8 +79,7 @@ const Wrapper = styled('AboutUs')`
         text-align: center;
       }
       .title .underline{
-        margin-left: 190px;
-        margin-top: 10px;
+       margin: auto;
       }
 
 

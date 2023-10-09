@@ -31,7 +31,10 @@ const Services = () => {
                                
                           
                     </div>
-                     <div className="learn-more"><Link to='/services'>Learn More<span className="arrow"><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/></span> </Link></div> 
+                    <div className="learn">
+                        <Link to='/services'> <span className="learn-more">Learn More</span><img width="50" height="50" src="https://img.icons8.com/ios/50/right--v1.png" alt="right--v1"/>  </Link>
+                    </div>
+                     
                      <hr />
                 </div>
                 
@@ -56,9 +59,10 @@ const Wrapper = styled('Services')`
     }
 
     .title > p{
+        
         line-height: 36px;
         margin-top: 10px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-family: 'Proza Libre';
     }
 .Images{
@@ -88,19 +92,25 @@ const Wrapper = styled('Services')`
     .description > p{
        line-height: 61px;
        text-align: center;
-       color:var(--Neutral, #F5F5DC);
+       color: var(--Neutral, #F5F5DC);
        font-family: 'Cormorant Garamond';
        font-size:23px;
 
     }
+    .learn{
+            width: fit-content;
+            text-align: center;
+            height: 44px;
+            margin: auto;
+
+            img{
+                transform: translateY(16px);
+            }
+          }
 
     .learn-more{
-        width: fit-content;
-        text-align: center;
-        height: 44px;
         border-radius: 10px;
         padding: 10px;
-        margin: auto;
         text-transform: uppercase;
         font-weight: 500;
         transition: var(--transition);
@@ -117,17 +127,16 @@ const Wrapper = styled('Services')`
         background: #FFCC70;
     }
     
-     .arrow img{
-        margin-right: -50px;
-    }
-
      @media (max-width: 992px) {
 
       .container{
         text-align: center;
         margin-top: 35px;
       }
-
+      
+      .title p{
+        padding: 5px;
+      }
 
       .Images{ 
         display: flex;
@@ -147,7 +156,6 @@ const Wrapper = styled('Services')`
         margin-top: 10px;
       }
 }
-
     `
 
 export default Services

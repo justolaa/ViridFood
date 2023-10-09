@@ -54,7 +54,7 @@ width: 100vw;
 .text{
     position: absolute;
     width: 55%;
-    top:20%;
+    top: 20%;
     border-radius: 24px;
     background: rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(1.5px);
@@ -82,25 +82,25 @@ width: 100vw;
 
    @media screen and (max-width: 992px) {
       .text{
-        width: 95%;
+        width: fit-content;;
+        height: fit-content;
         right: 10px;
         text-align: center;
         backdrop-filter: none; 
         margin: auto;
         
       h1{
-       font-size: 17px;
+       font-size: 1.3rem;
         margin: auto;
       }
     }
     .tagline > h2{
         width: fit-content;
         margin: auto;
-        line-height: 28px;
-        font-size: 16px;
-        padding: 15px;
-        font-weight:normal;
-
+        font-size: 1.1rem;
+        line-height: 24px;
+        padding: 5px;
+    
     }
 
 `

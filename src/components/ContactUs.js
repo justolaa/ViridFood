@@ -44,6 +44,10 @@ h1{
     margin-left: 5px;
     font-weight: 500;
     line-height: 40px; 
+
+    span{
+        line-height: 19px; 
+    }
 }
 
 

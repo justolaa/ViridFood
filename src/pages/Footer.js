@@ -47,7 +47,7 @@ const Footer = () => {
          <div className="footer-links">
                       <h1>Contact us</h1>
                    <p>Chat With Us:<a href="https://wa.me/+2348137038442"><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a></p>   
-                      <p>Call: <a href="tel:+2348137038442">+2348137038442</a></p>
+                      <p>Call: <a href="tel:2348137038442">+2348137038442</a></p>
                               
                     </div>
           </div>
@@ -60,6 +60,7 @@ const Wrapper = styled('Footer')`
 
 .container{
   width: 100vw;
+  margin-bottom: 0;
   background: #4B8673;
      img{
         border-radius: 50%;

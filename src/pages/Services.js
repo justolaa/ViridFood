@@ -115,7 +115,7 @@ const Wrapper = styled('Services')`
 
       .container{
         margin-top: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         padding: 30px;
         
       }

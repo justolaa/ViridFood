@@ -81,7 +81,7 @@ const Wrapper = styled('Reviews')`
       .reviews{
         margin-left: 0px;
         display: grid;
-        grid-template-rows: repeat(4, 215px) ;
+        grid-template-rows: repeat(4, 228px) ;
         grid-template-columns: repeat(1, auto);
         gap: 10px;
       }

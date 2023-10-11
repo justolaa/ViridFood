@@ -75,7 +75,7 @@ width: 100vw;
     text-align: center;
     font-size: 19px;
     font-style: normal;
-    font-weight: 20;
+    font-weight: 5;
     line-height: 34px;
     font-family: 'Proza Libre';
    }
@@ -97,7 +97,7 @@ width: 100vw;
     .tagline > h2{
         width: fit-content;
         margin: auto;
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 24px;
         padding: 5px;
     

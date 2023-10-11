@@ -80,10 +80,34 @@ const Wrapper = styled('Notice')`
    }
     @media (max-width: 992px) {
 .Notice-Container{
-    width: 300px;
+    width: 280px;
     margin: auto; 
 }
+   @keyframes wiggle{
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-6deg);
+    }
+    20%{
+        transform: rotateZ(6deg);
+    }
+     25%{
+        transform: rotateZ(-6deg);
+    }
+     30%{
+        transform: rotateZ(4deg);
+    }
 
+    35%{
+        transform: rotateZ(-4deg);
+    }
+     40%, 100%{
+        transform: rotateZ(0);
+    }
+
+   }
 `
 
 export default Notice

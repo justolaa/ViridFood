@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Notice = () => {
   return (
     <Wrapper>
-            <div className='Notice-Container'>
+            <div className='Notice-Container'> 
             <h1>Coming Soon...</h1>
             <img src={require('../assets/Logo.png')} width='100px' height='100px' alt="Logo"/>
             <h2>Sunday Sunday!!!</h2>
@@ -12,7 +12,7 @@ const Notice = () => {
             <ul>
                 <li>Jollof-Rice</li>
                 <li>Fried-Rice</li>
-                <li>Coconut-Rice</li>
+                <li>Coconut-Rice</li> 
                 <li>Chinese-Rice e.t.c</li>
             </ul>
             <p>More Information Coming Soon!!</p>
@@ -25,6 +25,7 @@ const Wrapper = styled('Notice')`
    .Notice-Container{
     margin: auto;
     width: fit-content;
+    height: fit-content;
     background: #F5DF99;
     border-radius: 35px;
     padding: 25px;
@@ -79,7 +80,7 @@ const Wrapper = styled('Notice')`
    }
     @media (max-width: 992px) {
 .Notice-Container{
-    width: 340px;
+    width: 300px;
     margin: auto; 
 }
 

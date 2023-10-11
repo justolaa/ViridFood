@@ -40,7 +40,7 @@ h1{
 .call-to-action p{
     margin-top: 29px;
     font-size: 20px;
-    font-family: Proza Libre;
+    font-family: 'Proza Libre';
     margin-left: 5px;
     font-weight: 500;
     line-height: 40px; 

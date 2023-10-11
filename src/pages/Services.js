@@ -43,7 +43,7 @@ const Wrapper = styled('Services')`
 
     h1{
         font-size: 2.2rem;
-        font-family: Cormorant Garamond;
+        font-family: 'Cormorant Garamond';
     }
 
    

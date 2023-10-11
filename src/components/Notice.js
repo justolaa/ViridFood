@@ -29,7 +29,7 @@ const Wrapper = styled('Notice')`
     border-radius: 35px;
     padding: 25px;
     font-size: 17px;
-    font-family: Cormorant Garamond;
+    font-family: 'Cormorant Garamond';
     animation: wiggle 3s linear infinite;
 
      img{
@@ -39,7 +39,7 @@ const Wrapper = styled('Notice')`
     ul{
         line-height: 40px;
         list-style-type: circle;
-        font-family: sans-serif;
+        font-family: 'Proza Libre';
     }
    }
 
@@ -49,7 +49,7 @@ const Wrapper = styled('Notice')`
     color: black;
    }
    p{
-    font-family: sans-serif;
+    font-family: 'Proza Libre';
    }
 
    @keyframes wiggle{

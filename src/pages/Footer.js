@@ -62,6 +62,7 @@ const Wrapper = styled('Footer')`
   width: 100vw;
   margin-bottom: 0;
   background: #4B8673;
+  overflow-x: hidden;
      img{
         border-radius: 50%;
     }

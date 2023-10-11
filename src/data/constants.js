@@ -162,28 +162,28 @@ export const products = [
 export const reviews = [
   {
     id: 1,
-    name: 'Olamide',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate impedit ipsam harum veniam reprehenderit quisquam tempora deserunt esse explicabo at.',
+    name: 'Steve Olusegun',
+    review: '"My experience with Virid Food Concept has been outstanding, and I cant wait for my next taste. I love jollof rice and a well prepared one will win my heart. I ate Virids Jollof rice once and not only did they win my heart, I could later tell by taste if certain food is from Virid! Such an amazing catering services with excellent customer service delivery as well"',
     stars:'5',
   },
     
    {
       id: 2,
-    name: 'Demilade',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate impedit ipsam harum veniam reprehenderit quisquam tempora deserunt esse explicabo at.',
-    stars:'4',
+    name: 'Kenneth Morgan',
+    review: '"Virid Food Concept Ltd provides exceptional services, and their products are consistently of high quality, free from any impurities such as sand or other undesirable elements. I have consistently enjoyed both their products and services. I highly recommend them to everyone and encourage you to patronize their offerings."',
+    stars:'5',
   },
    {
      id: 3,
-    name: 'Eni',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate impedit ipsam harum veniam reprehenderit quisquam tempora deserunt esse explicabo at.',
-    stars:'3',
+    name: 'Yetunde Adewunmi',
+    review: '"Virid food concept is sumptuous, superlative, promptness, neat, nutritional,  healthy and uncompromising foods."',
+    stars:'4',
   },
    {
       id: 4,
-    name: 'Timilehin',
-    review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate impedit ipsam harum veniam reprehenderit quisquam tempora deserunt esse explicabo at.',
-    stars:'1',
+    name: 'Rukayat Musa',
+    review: '"Virid offers exquisite services and products. Have a taste a of Virids food and fall into a state of craving for more!"',
+    stars:'4.5',
   },
   
 ]

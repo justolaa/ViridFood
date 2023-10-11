@@ -111,6 +111,7 @@ const Wrapper = styled('Footer')`
 @media (max-width: 992px) {
   .container{
     margin-top: 50px;
+    padding: 10px;
   }
 
   .Links{

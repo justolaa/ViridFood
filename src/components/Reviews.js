@@ -19,7 +19,6 @@ const Reviews = () => {
                             return(
                                 <div className="customer-reviews" key={id}>
                                     <h4>{name}</h4>
-                                    
                                     <Stars stars={stars} review={review}/>
                                 </div>
                             )
@@ -81,7 +80,13 @@ const Wrapper = styled('Reviews')`
 
       .reviews{
         margin-left: 0px;
+        display: grid;
+        grid-template-rows: repeat(4, 215px) ;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
       }
+     
+       
 }
   @media (min-width: 992px) {
 

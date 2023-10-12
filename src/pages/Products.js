@@ -99,9 +99,9 @@ const Wrapper = styled('Services')`
         color:hsl(22, 28%, 21%);
     }
      @media (max-width: 992px) {
-
       .container{
         text-align: center;
+        margin-bottom: 50px;
       }
       .Images{ 
         display: flex;

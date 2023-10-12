@@ -104,6 +104,7 @@ const Wrapper = styled('Services')`
 
       .container{
         text-align: center;
+        margin-bottom: 50px;
       }
       .Images{ 
         display: flex;

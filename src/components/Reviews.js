@@ -7,8 +7,6 @@ const Reviews = () => {
   return (
     <Wrapper>
         <div className="container">
-
-        
     <div className="title">
                         <h1>Customer Reviews</h1>
                         <div className='underline'></div>
@@ -81,7 +79,7 @@ const Wrapper = styled('Reviews')`
       .reviews{
         margin-left: 0px;
         display: grid;
-        grid-template-rows: repeat(4, 310px) ;
+        grid-template-rows: repeat(4, auto) ;
         grid-template-columns: repeat(1, auto);
         gap: 10px;
       }

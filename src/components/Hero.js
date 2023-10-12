@@ -73,7 +73,7 @@ width: 100vw;
     flex: 1 0 0;
     color: var(--Neutral, #F5F5DC);
     text-align: center;
-    font-size: 19px;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 5;
     line-height: 34px;

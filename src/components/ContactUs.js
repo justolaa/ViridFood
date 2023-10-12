@@ -9,7 +9,7 @@ const ContactUs = () => {
                     <div className='underline'></div>
                     <p> <span>Call ViridFood At </span><a href="tel:2348137038442"><span>+2348137038442</span></a><span> To Learn More!</span></p>
                     <p> <span>To Request A Quote: </span><a href="https://wa.me/+2348137038442"> <span>Click Here!</span></a></p>
-                    <p><span>Chat With Us:</span><a href="https://wa.me/+2348137038442"> Click Here !</a><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></p>
+                    <p><span>Chat With Us:</span><a href="https://wa.me/+2348137038442"> Click Here ! <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a></p>
                 </div>
      </Wrapper>
   )
@@ -46,7 +46,7 @@ h1{
     line-height: 40px; 
 
     span{
-        line-height: 19px; 
+        line-height: 26px; 
     }
 }
 

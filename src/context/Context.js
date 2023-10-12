@@ -1,6 +1,6 @@
-import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducer/reducer'
+import { useLocation } from 'react-router-dom';
 // import { products_url as url } from '../utils/constants'
 
 const initialState = {
@@ -12,6 +12,15 @@ const initialState = {
 
 const ProductsContext = React.createContext()
 
+
+export const ScrollToTop = ()=>{
+  const {pathname} = useLocation();
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   
@@ -21,6 +30,8 @@ export const ProductsProvider = ({ children }) => {
   const closeSidebar = ()=>{
      dispatch({type: 'SIDEBAR_CLOSE' })
   }
+
+
 
 //   const fetchProducts = async ()=>{
 //     dispatch({type: GET_PRODUCTS_BEGIN})

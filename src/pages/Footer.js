@@ -8,7 +8,7 @@ const Footer = () => {
     <Wrapper>
     <div className="container">
       <div className="quick-logo">
-        <Link to='/' className='Logo'> <img src={require('../assets/Logo.png')} width='100px' height='100px' alt="Logo"/> </Link>
+        <Link to='/' className='Logo'> <img src={require('../assets/Logo.png')} width='70px' height='70px' alt="Logo"/> </Link>
       </div>
 
       <div className="Links">    
@@ -44,12 +44,7 @@ const Footer = () => {
                                 <p>Consultancy </p>
                               
                     </div>
-         <div className="footer-links">
-                      <h1>Contact us</h1>
-                   <p>Chat With Us:<a href="https://wa.me/+2348137038442"><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a></p>   
-                      <p>Call: <a href="tel:2348137038442">+2348137038442</a></p>
-                              
-                    </div>
+      
           </div>
     </div>
     </Wrapper>
@@ -60,9 +55,10 @@ const Wrapper = styled('Footer')`
 
 .container{
   width: 100vw;
-  margin-bottom: 0;
+  margin-top: 0;
   background: #4B8673;
   overflow-x: hidden;
+  
      img{
         border-radius: 50%;
     }
@@ -75,9 +71,9 @@ const Wrapper = styled('Footer')`
 }
 
 .Links{
-    display:flex;
+  display:flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-shrink: 0;
 }
 
@@ -105,14 +101,14 @@ const Wrapper = styled('Footer')`
 }
 
   .footer-links p{
-    font-size: 17px;
-    line-height: 34px;
+    font-size: 1.3rem;
+    line-height: 38px;
   }
   
 @media (max-width: 992px) {
   .container{
     margin-top: 50px;
-    padding: 10px;
+    padding: 14px;
   }
 
   .Links{

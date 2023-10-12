@@ -32,7 +32,7 @@ const Services = () => {
                                     })}
                                 </div>
                 </div>
-                <div className="btn"><a href="https://wa.me/08183554935">Contact Us Now</a></div>
+                <div className="btn"><a href="https://wa.me/+2348137038442">Contact Us Now</a></div>
             </div>
             
              </Wrapper>

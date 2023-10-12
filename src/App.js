@@ -8,12 +8,14 @@ import Products from './pages/Products'
 import AboutUs from './pages/AboutUs'
 import Sidebar from './components/Sidebar'
 import Error from './pages/ErrorPage'
+import { ScrollToTop } from './context/Context'
 
 
 
 function App() {
   return(
     <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Sidebar/>
       <Routes>

@@ -59,10 +59,9 @@ const Wrapper = styled('Services')`
     }
 
     .title > p{
-        
         line-height: 36px;
         margin-top: 10px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: 'Proza Libre';
     }
 .Images{
@@ -136,6 +135,7 @@ const Wrapper = styled('Services')`
       
       .title p{
         padding: 5px;
+        font-size: 1.2rem;
       }
 
       .Images{ 

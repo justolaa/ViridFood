@@ -24,11 +24,11 @@ const Notice = () => {
 const Wrapper = styled('Notice')`
    .Notice-Container{
     margin: auto;
-    width: fit-content;
+    width: 600px;
     height: fit-content;
     background: #F5DF99;
     border-radius: 35px;
-    padding: 25px;
+    padding: 35px;
     font-size: 17px;
     font-family: 'Cormorant Garamond';
     animation: wiggle 3s linear infinite;

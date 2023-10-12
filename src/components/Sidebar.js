@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../assets/Logo.png'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/Context'
 import { FaTimes } from 'react-icons/fa'
@@ -98,6 +97,7 @@ const SidebarContainer = styled.div`
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;
+    
   }
   .show-sidebar {
     transform: translate(0);

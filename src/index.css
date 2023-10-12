@@ -129,6 +129,10 @@ p {
   h4 {
     line-height: 1;
   }
+    p {
+      color: black;
+      font-size: 1.3rem;
+    }
 }
 /*  global classes */
 

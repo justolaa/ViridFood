@@ -32,7 +32,7 @@ const Products = () => {
                                     })}
                                 </div>
                 </div>
-                <div className="btn"><a href="https://wa.me/08183554935">Purchase Now</a></div>  
+                <div className="btn"><a href="https://wa.me/+2348137038442">Purchase Now</a></div>  
             </div>
                  
             </Wrapper>

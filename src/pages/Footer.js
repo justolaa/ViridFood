@@ -107,6 +107,7 @@ const Wrapper = styled('Footer')`
   
 @media (max-width: 992px) {
   .container{
+    margin-top: 100%
     padding: 14px;
   }
 

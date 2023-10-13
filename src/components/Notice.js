@@ -88,13 +88,13 @@ const Wrapper = styled('Notice')`
         transform: rotateZ(0);
     }
     15%{
-        transform: rotateZ(-6deg);
+        transform: rotateZ(-5deg);
     }
     20%{
-        transform: rotateZ(6deg);
+        transform: rotateZ(5deg);
     }
      25%{
-        transform: rotateZ(-6deg);
+        transform: rotateZ(-5deg);
     }
      30%{
         transform: rotateZ(4deg);

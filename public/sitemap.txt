@@ -2,4 +2,3 @@ https://virid-food-concept.web.app/
 https://virid-food-concept.web.app/services
 https://virid-food-concept.web.app/products
 https://virid-food-concept.web.app/aboutus
-virid-food-concept.firebaseapp.com

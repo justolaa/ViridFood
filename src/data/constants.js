@@ -32,7 +32,7 @@ export const services = [
     title: 'Amala',
     width: '300px',
     height:'270px',
-    url: require('../assets/Amala-With-Ewedu.jpeg')
+    url: require('../assets/Amala With Ewedu And Gbegiri.jpg')
    
   },
 

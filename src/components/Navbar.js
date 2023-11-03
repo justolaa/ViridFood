@@ -7,7 +7,8 @@ import { useProductsContext } from '../context/Context';
 
 
 const Navbar = () => {
-    const {openSidebar} = useProductsContext();
+    const {openSidebar, userRole} = useProductsContext();
+
   return (
     <Wrapper>
     <div className="nav-container">
@@ -25,10 +26,9 @@ const Navbar = () => {
                             </div>
                         )
                     })}
-      
         </div>
       </div>
-        
+        {userRole ? <div className='btn'><Link to='/admin'>Account</Link></div> : <div className='btn'><Link to='/account'>Account</Link></div>}
     </div>
     </Wrapper>
   )
@@ -84,6 +84,12 @@ const Wrapper = styled('Navbar') `
 .Links{
     display: none;
 }
+@media (max-width: 992px) {
+    .btn {
+      display: none;
+    }
+  }
+
 @media (min-width: 992px) {
     .nav-toggle {
       display: none;
@@ -100,7 +106,17 @@ const Wrapper = styled('Navbar') `
     margin-left: 30px;
     font-size: 17px;
 }
+
+.btn{
+  position: absolute;
+  right: 0;
+  top: 50px;
+  margin-right: 50px;
+  text-align: end;
+  color: black;
+}
     }
+
 
 `
 

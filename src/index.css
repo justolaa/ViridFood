@@ -68,7 +68,7 @@ body {
   overflow-x: hidden;
 }
 ul {
-  list-style-type: none;
+  list-style-type: circle;
 }
 a {
   text-decoration: none;

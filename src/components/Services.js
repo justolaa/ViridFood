@@ -1,9 +1,58 @@
 import React from 'react'
-import { services } from '../data/constants';
+// import { services } from '../data/constants';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import {ref, uploadBytes, getDownloadURL, deleteObject } from "firebase/storage";
+import { collection, addDoc, query, onSnapshot, doc, deleteDoc } from "firebase/firestore";
+import { storage, db } from "../firebase";
 import styled from 'styled-components';
+import { useProductsContext } from '../context/Context';
 
 const Services = () => {
+    const [image, setImage] = useState(null);
+ const [description, setDescription] = useState('');
+ const [images, setImages] = useState([]);
+ const {userRole} = useProductsContext();
+
+
+ useEffect(() => {
+    const q = query(collection(db, 'serviceshome'), );
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const data = querySnapshot.docs.map((doc) => ({ id: doc.id, data: doc.data()}));
+      setImages(data);
+    });
+    return () => unsubscribe();
+ }, []);
+
+ const handleImageChange = (e) => {
+    if (e.target.files[0]) {
+      setImage(e.target.files[0]);
+    }
+ };
+
+ const handleDescriptionChange = (e) => {
+    setDescription(e.target.value);
+ };
+
+ const handleUpload = async () => {
+    const storageRef = ref(storage, `serviceshome/${image.name}`);
+    const uploadTask = uploadBytes(storageRef, image);
+
+    await uploadTask;
+    const url = await getDownloadURL(storageRef);
+
+    await addDoc(collection(db, 'serviceshome'), {
+      name: image.name,
+      description: description,
+      url: url,
+    });
+ };
+
+ const handleDelete = async (id) => {
+    const storageRef = ref(storage, `serviceshome/${images.find(img => img.id === id).data.name}`);
+    await deleteObject(storageRef);
+    await deleteDoc(doc(db, 'serviceshome', id));
+ };
   return (
     <Wrapper>
         <div className="container">
@@ -14,18 +63,21 @@ const Services = () => {
                                 Also, Turn Your Restaurants Dreams Into Reality With Our Consulting Services. 
                                 We're Your Partners In Creating Memorable And Thriving Businesses.
                             </p>
+                                        { 
+                                        userRole && <><input type="file" onChange={handleImageChange} />
+                                        <input type="text" onChange={handleDescriptionChange} />
+                                        <button onClick={handleUpload}>Upload</button></> 
+                                        }
                                 <div className="Images" >
-                                    {services.map((services)=>{
-                                        const {id, title, url, width, height} = services;
-                                        return(
-                                            <div key={id}>
-                                                <img src={url} width={width} height={height} alt={title} />
-                                                 <div className="description">
-                                                        <p>{title}</p>  
-                                                 </div>
-                                        </div>
-                                        )
-                                    })}
+                                    {images.map(img => (
+                                            <div key={img.id}>
+                                              <img src={img.data.url} alt={img.data.name} width='300px' height='270px' />
+                                              <div className="description">
+                                                    <p>{img.data.description}</p>  
+                                                    </div>
+                                              {userRole && <button onClick={() => handleDelete(img.id)}>Delete</button>} 
+                                            </div>
+                                          ))}
                                    
                                 </div>
                                

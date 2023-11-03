@@ -1,13 +1,15 @@
-import React, { useContext, useEffect, useReducer } from 'react'
+import React, { useContext, useEffect, useReducer, useState } from 'react'
 import reducer from '../reducer/reducer'
 import { useLocation } from 'react-router-dom';
-// import { products_url as url } from '../utils/constants'
+import { createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword, 
+  signOut, onAuthStateChanged } from "firebase/auth";
+import {auth,db} from '../firebase'
+import { setDoc, doc, getDoc} from 'firebase/firestore';
+
 
 const initialState = {
   isSidebarOpen:false,
-//   products_loading:false,
-//   products_error:false,
-//   single_product_loading: false,
 }
 
 const ProductsContext = React.createContext()
@@ -23,7 +25,10 @@ export const ScrollToTop = ()=>{
 
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  
+  const [user, setUser] = useState({})
+  const [loading, setLoading] = useState(true);
+ const [userRole, setUserRole] = useState(null);
+
   const openSidebar = ()=>{
      dispatch({type: 'SIDEBAR_OPEN' })
   }
@@ -31,37 +36,55 @@ export const ProductsProvider = ({ children }) => {
      dispatch({type: 'SIDEBAR_CLOSE' })
   }
 
+  const createUser = (email,password) =>{
+        return createUserWithEmailAndPassword(auth,email,password)
+  }
 
+  const signIn = (email, password)=>{
+     return signInWithEmailAndPassword(auth, email, password)
+  }
 
-//   const fetchProducts = async ()=>{
-//     dispatch({type: GET_PRODUCTS_BEGIN})
-//     try {
-//       const response = await axios.get(url)
-//       const products = response.data
-//       dispatch({type:GET_PRODUCTS_SUCCESS, payload: products})
-//     } catch (error) {
-//        dispatch({type:GET_PRODUCTS_ERROR})
-//     }
-    
-//   }
+  const logout = ()=>{
+    return signOut(auth)
+  }
+ useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        GetUserRole(user);
+      } else {
+        setUserRole(null);
+        setUser(null);
+      }
+    });
+ }, []);
+  
+    const handleAdminRole = async () => {
+    const userRef = doc(db, 'users', user.uid);
+    await setDoc(userRef, {
+      role: 'admin'
+    });
+ };
 
-//   const fetchSingleProduct = async (url)=>{
-//     dispatch({type: GET_SINGLE_PRODUCT_BEGIN});
-//     try {
-//       const response = await axios.get(url);
-//        const singleProduct = response.data;
-//        dispatch({type: GET_SINGLE_PRODUCT_SUCCESS, payload:singleProduct})
-//     } catch (error) {
-//       dispatch({type:GET_SINGLE_PRODUCT_ERROR})
-//     }
-//   }
-
-//   useEffect(()=>{
-//      fetchProducts(url)
-//   },[])
-
+ const handleOwnerRole = async () => {
+    const userRef = doc(db, 'users', user.uid);
+    await setDoc(userRef, {
+      role: 'owner'
+    });
+ };
+const GetUserRole = async (user) => {
+    try {
+      const userRoleRef = doc(db, 'users', user.uid);
+      const userRoleSnapshot = await getDoc(userRoleRef);
+      const userRoleData = userRoleSnapshot.data();
+      setUserRole(userRoleData.role);
+    } catch (err) {
+      console.error('Error getting user role: ', err);
+    }
+ };
   return (
-    <ProductsContext.Provider value={{...state, openSidebar, closeSidebar}}>
+    <ProductsContext.Provider value={{...state, openSidebar, closeSidebar, createUser, 
+    user, logout, signIn,handleAdminRole, handleOwnerRole, loading, userRole, setUserRole}}>
       {children}
     </ProductsContext.Provider>
   )
@@ -70,3 +93,11 @@ export const ProductsProvider = ({ children }) => {
 export const useProductsContext = () => {
   return useContext(ProductsContext)
 }
+
+//  if (loading) {
+//     return <div>Loading...</div>;
+//  }
+
+//  if (!user) {
+//     return <div>No user is signed in.</div>;
+//  }

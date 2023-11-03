@@ -58,7 +58,7 @@ const Wrapper = styled('Footer')`
   margin-top: 0;
   background: #4B8673;
   overflow-x: hidden;
-  
+  margin-top: 100%;
      img{
         border-radius: 50%;
     }

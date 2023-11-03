@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 
 const Sidebar = () => {
-  const {isSidebarOpen, closeSidebar} = useProductsContext()
+  const {isSidebarOpen, closeSidebar, userRole} = useProductsContext()
   return <SidebarContainer>
     <aside className={`${isSidebarOpen? 'sidebar show-sidebar' : "sidebar"}`}>
       <div className="sidebar-header">
@@ -24,6 +24,7 @@ const Sidebar = () => {
         })}
         <li>
      </li>
+     {userRole ? <div className='btn'><Link to='/admin'>Account</Link></div> : <div className='btn'><Link to='/account'>Account</Link></div>}
       </ul>
     </aside>
   </SidebarContainer>

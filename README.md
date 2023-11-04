@@ -17,5 +17,5 @@
 - REACT ROUTER
 
 ## Contributors
-1. WEB DEVELOPER- IDOWU OLAMIDE | https://portfolio-website-eff06.web.app/
-2. UI/UX DESIGNER - MUSA SAMIN | https://www.behance.net/musasamin8/projects?locale=en_US&
+1. **WEB DEVELOPER**- IDOWU OLAMIDE | https://portfolio-website-eff06.web.app/
+2. **UI/UX DESIGNER** - MUSA SAMIN | https://www.behance.net/musasamin8/projects?locale=en_US&
